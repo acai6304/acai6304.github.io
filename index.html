@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Playground</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="logo">CSS Playground</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#hero">Hero</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#controls">Controls</a></li>
+          <li><a href="#animate">Animate</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <h2 class="drop-cap">Welcome to my demo</h2>
+        <p class="intro">Resize the window, try dark mode, and hover things.</p>
+        <button class="button">Hover Me</button>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <h3>Cards</h3>
+        <ul class="card-grid">
+          <li class="card">
+            <div class="thumb" aria-hidden="true"></div>
+            <h4>Card One</h4>
+            <p>Hover the image for filter effects</p>
+          </li>
+          <li class="card">
+            <div class="thumb" aria-hidden="true"></div>
+            <h4>Card Two</h4>
+            <p>Basic transform on hover.</p>
+          </li>
+          <li class="card">
+            <div class="thumb" aria-hidden="true"></div>
+            <h4>Card Three</h4>
+            <p>Uses simple CSS variables.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="controls" class="controls">
+        <h3>Form</h3>
+        <form class="demo-form" autocomplete="off">
+          <label for="name">Your name</label>
+          <input id="name" type="text" placeholder="Type here..." />
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="3" placeholder="Say something..."></textarea>
+          <p class="tiny-note">Rotate your phone to landscape under 600px.</p>
+        </form>
+      </section>
+
+      <section id="animate" class="animate">
+        <h3>Animation vs Transition</h3>
+        <div class="stage">
+          <div class="box" aria-label="Animated box"></div>
+        </div>
+        <p>The box above uses keyframes. Buttons and cards use transitions.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>&copy; CSS Playground</small>
+    </footer>
+  </body>
+</html>
